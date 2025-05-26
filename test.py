@@ -5,7 +5,7 @@ from spline import *
 
 class splineTest (unittest.TestCase):
 	def setUp (self):
-		self.x = [0.0, 0.3, 0.5, 0.8, 1, 1.3, 1.5]
+		self.x = [0.0, 0.3, 0.5, 0.8, 1, 1.4, 1.8]
 		self.y = [0.0, 0.299401, 0.4923442, 0.7228442, 0.7798934, 0.6385505, 0.4452612]
 		self.spline = spline (self.x, self.y)
 	
