@@ -1,8 +1,6 @@
 ﻿import unittest
 import math
-
 from spline import *
-
 class splineTest (unittest.TestCase):
 	def setUp (self):
 		self.x = [0.0, 0.3, 0.5, 0.8, 1, 1.4, 1.8]
@@ -23,7 +21,5 @@ class splineTest (unittest.TestCase):
 		realVal = [0.200093881251, 0.473740862529, 0.342274119669, 0.0, 0.4923442]
 		for i in range (n):
 			self.assert_ (math.fabs (realVal[i] - val[i]) < 1e-10)
-
-
 if __name__ == '__main__':
 	unittest.main()
